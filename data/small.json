@@ -48,17 +48,3 @@
     ]
   }
 }
-
-<tool id="classviz" name="Visualizer" version="0.1.0">
-  <description></description>
-  <command>rm '${__tool_directory__}/data/input.json'; cp '$input' '${__tool_directory__}/data/input.json'; python3 -m http.server -b 127.0.0.42 7800 -d '${__tool_directory__}/'</command>
-  <inputs>
-    <param name="input" type="data" format="json" label="JSON file" help="Delete the job once done."/>
-  </inputs>
-  <outputs>
-    <data format="txt" name="link" label="Go to http://127.0.0.42:7800/"/>
-  </outputs>
-  <help>
-    This tool takes json files as inputs and visualize the graph structure. Delete the job once done to kill the server.
-  </help>
-</tool>

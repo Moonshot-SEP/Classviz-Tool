@@ -802,7 +802,7 @@ function bindPopper(target) {
 }
 // Function to automatically load input file when launching the window
 window.onload = function() {
-  const filePath = 'http://127.0.0.42:7800/data/user-input.json'; // URL to file
+  const filePath = 'http://127.0.0.42:7800/data/input.json'; // URL to file
   fetch(filePath)
     .then(response => response.text())
     .then(data => {

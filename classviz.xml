@@ -1,6 +1,6 @@
-<tool id="classviz" name="Visualizer" version="0.1.0">
+<tool id="classviz" name="Classviz-Tool" version="0.1.0">
   <description></description>
-  <command>mv '$input' '${__tool_directory__}/data/user-input.json'; python3 -m http.server -b 127.0.0.42 7800 -d '${__tool_directory__}/'</command>
+  <command>python3 '${__tool_directory__}/move_input_file.py' '$input'; python3 -m http.server -b 127.0.0.42 7800 -d '${__tool_directory__}/'</command>
   <inputs>
     <param name="input" type="data" format="json" multiple="False" label="JSON file" help="Delete the job once done."/>
   </inputs>
