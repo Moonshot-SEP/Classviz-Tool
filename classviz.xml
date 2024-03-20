@@ -1,8 +1,8 @@
 <tool id="classviz" name="Visualizer" version="0.1.0">
   <description></description>
-  <command>python3 -m http.server -b 127.0.0.42 7800 -d '${__tool_directory__}/'</command>
+  <command>mv '$input' '${__tool_directory__}/data/user-input.json'; python3 -m http.server -b 127.0.0.42 7800 -d '${__tool_directory__}/'</command>
   <inputs>
-    <param name="input" type="data" format="json" label="JSON file" help="Delete the job once done."/>
+    <param name="input" type="data" format="json" multiple="False" label="JSON file" help="Delete the job once done."/>
   </inputs>
   <outputs>
     <data format="txt" name="link" label="Go to http://127.0.0.42:7800/"/>

@@ -800,3 +800,20 @@ function bindPopper(target) {
       });
   }
 }
+// Function to automatically load input file when launching the window
+window.onload = function() {
+  const filePath = 'http://127.0.0.42:7800/data/user-input.json'; // URL to file
+  fetch(filePath)
+    .then(response => response.text())
+    .then(data => {
+      // Parse the file content
+      const json = JSON.parse(data);
+      const eles = prepareEles(json.elements);
+      const style = fetch("style.cycss").then((res) => res.text());
+      Promise.all([eles, style]).then(initCy);
+      // Set the filename in the UI
+      const filePrefix = filePath.split('/').pop();
+      document.getElementById("filename").textContent = `Software Visualization: ${filePrefix}`;
+    })
+    .catch(error => console.error('Error:', error));
+};
