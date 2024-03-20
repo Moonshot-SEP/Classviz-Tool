@@ -1,13 +1,15 @@
-<tool id="classviz" name="Classviz-Tool" version="0.1.0">
-  <description></description>
-  <command>python3 '${__tool_directory__}/move_input_file.py' '$input' '${__tool_directory__}/data/input.json'; python3 -m http.server -b 127.0.0.42 7800 -d '${__tool_directory__}/'</command>
+<tool id="classviz" name="Classviz-Tool" version="1.0.0">
+  <description>Visualize code architecture in JSON format</description>
+  <command detect_errors="exit_code">
+    python3 '${__tool_directory__}/move_input_file.py' '$input' '${__tool_directory__}/data/input.json'; python3 -m http.server -b 127.0.0.42 7800 -d '${__tool_directory__}/'
+  </command>
   <inputs>
-    <param name="input" type="data" format="json" multiple="False" label="JSON file" help="Delete the job once done."/>
+    <param name="input" type="data" format="json" multiple="False" label="JSON file" help="JSON file to be visualized."/>
   </inputs>
   <outputs>
     <data format="txt" name="link" label="Go to http://127.0.0.42:7800/"/>
   </outputs>
   <help>
-    This tool takes json files as inputs and visualize the graph structure. Delete the job once done to kill the server.
+    This tool takes a JSON file as input and visualize the code architecture. Delete the job once done to kill the server.
   </help>
 </tool>
