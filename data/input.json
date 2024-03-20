@@ -1,0 +1,628 @@
+{
+    "elements": {
+        "nodes": [
+            {
+                "data": {
+                    "id": "long",
+                    "labels": [
+                        "Primitive"
+                    ],
+                    "properties": {
+                        "simpleName": "long",
+                        "metaSrc": "source code"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "int",
+                    "labels": [
+                        "Primitive"
+                    ],
+                    "properties": {
+                        "simpleName": "int",
+                        "metaSrc": "source code"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "double",
+                    "labels": [
+                        "Primitive"
+                    ],
+                    "properties": {
+                        "simpleName": "double",
+                        "metaSrc": "source code"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "byte",
+                    "labels": [
+                        "Primitive"
+                    ],
+                    "properties": {
+                        "simpleName": "byte",
+                        "metaSrc": "source code"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "char",
+                    "labels": [
+                        "Primitive"
+                    ],
+                    "properties": {
+                        "simpleName": "char",
+                        "metaSrc": "source code"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "java.lang.String",
+                    "labels": [
+                        "Primitive"
+                    ],
+                    "properties": {
+                        "simpleName": "java.lang.String",
+                        "metaSrc": "source code"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "float",
+                    "labels": [
+                        "Primitive"
+                    ],
+                    "properties": {
+                        "simpleName": "float",
+                        "metaSrc": "source code"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "short",
+                    "labels": [
+                        "Primitive"
+                    ],
+                    "properties": {
+                        "simpleName": "short",
+                        "metaSrc": "source code"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "boolean",
+                    "labels": [
+                        "Primitive"
+                    ],
+                    "properties": {
+                        "simpleName": "boolean",
+                        "metaSrc": "source code"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902",
+                    "labels": [
+                        "Container"
+                    ],
+                    "properties": {
+                        "simpleName": "com.example",
+                        "metaSrc": "source code",
+                        "kind": "package"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "16_18573710168947395722818196988065667641629061227320998321644155282453191746361",
+                    "labels": [
+                        "Container"
+                    ],
+                    "properties": {
+                        "simpleName": "com.example.utils",
+                        "metaSrc": "source code",
+                        "kind": "package"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "123_1912817709892823888899980339861290381080011166880958045983955485453778326730",
+                    "labels": [
+                        "Structure"
+                    ],
+                    "properties": {
+                        "simpleName": "MouseDemo",
+                        "metaSrc": "source code",
+                        "kind": "class",
+                        "isPublic": true,
+                        "isClass": true,
+                        "isInterface": false,
+                        "isAbstract": "false",
+                        "isEnum": false
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "157_13071482742467915057964212414102077218758511015921986360360096680795792121377",
+                    "labels": [
+                        "Structure"
+                    ],
+                    "properties": {
+                        "simpleName": "PressingTimes",
+                        "metaSrc": "source code",
+                        "kind": "class",
+                        "isPublic": true,
+                        "isClass": true,
+                        "isInterface": false,
+                        "isAbstract": "false",
+                        "isEnum": false
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "77_66173846589815101906728389104108056576675454840430078627549477641082182881715",
+                    "labels": [
+                        "Structure"
+                    ],
+                    "properties": {
+                        "simpleName": "FlyingColors",
+                        "metaSrc": "source code",
+                        "kind": "class",
+                        "isPublic": true,
+                        "isClass": true,
+                        "isInterface": false,
+                        "isAbstract": "false",
+                        "isEnum": false
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "264_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "labels": [
+                        "Structure"
+                    ],
+                    "properties": {
+                        "simpleName": "CalculatorImpl",
+                        "metaSrc": "source code",
+                        "kind": "abstract class",
+                        "isPublic": false,
+                        "isClass": true,
+                        "isInterface": false,
+                        "isAbstract": "true",
+                        "isEnum": false
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "81_49881798265996273591468916272598818770191138679126742081133613503375263445902",
+                    "labels": [
+                        "Structure"
+                    ],
+                    "properties": {
+                        "simpleName": "Main",
+                        "metaSrc": "source code",
+                        "kind": "class",
+                        "isPublic": true,
+                        "isClass": true,
+                        "isInterface": false,
+                        "isAbstract": "false",
+                        "isEnum": false
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "141_108940806429788386109196640337652659507843643088250856282888848706711442564558",
+                    "labels": [
+                        "Structure"
+                    ],
+                    "properties": {
+                        "simpleName": "RowColorChanger",
+                        "metaSrc": "source code",
+                        "kind": "class",
+                        "isPublic": false,
+                        "isClass": true,
+                        "isInterface": false,
+                        "isAbstract": "false",
+                        "isEnum": false
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "1101_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "labels": [
+                        "Structure"
+                    ],
+                    "properties": {
+                        "simpleName": "CalculatorImpl2",
+                        "metaSrc": "source code",
+                        "kind": "class",
+                        "isPublic": false,
+                        "isClass": true,
+                        "isInterface": false,
+                        "isAbstract": "false",
+                        "isEnum": false
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "7_5922057860806017090263446499798911804485581115943994162465636664007429892873",
+                    "labels": [
+                        "Structure"
+                    ],
+                    "properties": {
+                        "simpleName": "Outer",
+                        "metaSrc": "source code",
+                        "kind": "class",
+                        "isPublic": true,
+                        "isClass": true,
+                        "isInterface": false,
+                        "isAbstract": "false",
+                        "isEnum": false
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "1817_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "labels": [
+                        "Structure"
+                    ],
+                    "properties": {
+                        "simpleName": "MyClass",
+                        "metaSrc": "source code",
+                        "kind": "class",
+                        "isPublic": false,
+                        "isClass": true,
+                        "isInterface": false,
+                        "isAbstract": "false",
+                        "isEnum": false
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "53_18573710168947395722818196988065667641629061227320998321644155282453191746361",
+                    "labels": [
+                        "Structure"
+                    ],
+                    "properties": {
+                        "simpleName": "Helper",
+                        "metaSrc": "source code",
+                        "kind": "class",
+                        "isPublic": true,
+                        "isClass": true,
+                        "isInterface": false,
+                        "isAbstract": "false",
+                        "isEnum": false
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "169_5922057860806017090263446499798911804485581115943994162465636664007429892873",
+                    "labels": [
+                        "Structure"
+                    ],
+                    "properties": {
+                        "simpleName": "Inner",
+                        "metaSrc": "source code",
+                        "kind": "class",
+                        "isPublic": false,
+                        "isClass": true,
+                        "isInterface": false,
+                        "isAbstract": "false",
+                        "isEnum": false
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "169_5922057860806017090263446499798911804485581115943994162465636664007429892873",
+                    "labels": [
+                        "Structure"
+                    ],
+                    "properties": {
+                        "simpleName": "Inner",
+                        "metaSrc": "source code",
+                        "kind": "class",
+                        "isPublic": true,
+                        "isClass": true,
+                        "isInterface": false,
+                        "isAbstract": "false",
+                        "isEnum": false
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "580_108940806429788386109196640337652659507843643088250856282888848706711442564558",
+                    "labels": [
+                        "Structure"
+                    ],
+                    "properties": {
+                        "simpleName": "ColorLabel",
+                        "metaSrc": "source code",
+                        "kind": "class",
+                        "isPublic": true,
+                        "isClass": true,
+                        "isInterface": false,
+                        "isAbstract": "false",
+                        "isEnum": false
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "27_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "labels": [
+                        "Structure"
+                    ],
+                    "properties": {
+                        "simpleName": "Operation",
+                        "metaSrc": "source code",
+                        "kind": "enum",
+                        "isPublic": false,
+                        "isClass": false,
+                        "isInterface": false,
+                        "isAbstract": null,
+                        "isEnum": true
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "119_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "labels": [
+                        "Structure"
+                    ],
+                    "properties": {
+                        "simpleName": "Calculator",
+                        "metaSrc": "source code",
+                        "kind": "interface",
+                        "isPublic": false,
+                        "isClass": false,
+                        "isInterface": true,
+                        "isAbstract": null,
+                        "isEnum": false
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "1611_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "labels": [
+                        "Structure"
+                    ],
+                    "properties": {
+                        "simpleName": "AdvancedCalculator",
+                        "metaSrc": "source code",
+                        "kind": "interface",
+                        "isPublic": false,
+                        "isClass": false,
+                        "isInterface": true,
+                        "isAbstract": null,
+                        "isEnum": false
+                    }
+                }
+            }
+        ],
+        "edges": [
+            {
+                "data": {
+                    "id": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902-contains-123_1912817709892823888899980339861290381080011166880958045983955485453778326730",
+                    "source": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902",
+                    "target": "123_1912817709892823888899980339861290381080011166880958045983955485453778326730",
+                    "label": "contains",
+                    "properties": {
+                        "containmentType": "package"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902-contains-157_13071482742467915057964212414102077218758511015921986360360096680795792121377",
+                    "source": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902",
+                    "target": "157_13071482742467915057964212414102077218758511015921986360360096680795792121377",
+                    "label": "contains",
+                    "properties": {
+                        "containmentType": "package"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902-contains-77_66173846589815101906728389104108056576675454840430078627549477641082182881715",
+                    "source": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902",
+                    "target": "77_66173846589815101906728389104108056576675454840430078627549477641082182881715",
+                    "label": "contains",
+                    "properties": {
+                        "containmentType": "package"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902-contains-264_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "source": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902",
+                    "target": "264_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "label": "contains",
+                    "properties": {
+                        "containmentType": "package"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902-contains-81_49881798265996273591468916272598818770191138679126742081133613503375263445902",
+                    "source": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902",
+                    "target": "81_49881798265996273591468916272598818770191138679126742081133613503375263445902",
+                    "label": "contains",
+                    "properties": {
+                        "containmentType": "package"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902-contains-141_108940806429788386109196640337652659507843643088250856282888848706711442564558",
+                    "source": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902",
+                    "target": "141_108940806429788386109196640337652659507843643088250856282888848706711442564558",
+                    "label": "contains",
+                    "properties": {
+                        "containmentType": "package"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902-contains-1101_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "source": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902",
+                    "target": "1101_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "label": "contains",
+                    "properties": {
+                        "containmentType": "package"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "1101_81089655204573303596097694707334118075185362493392709917353282299047963500310-extends-264_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "source": "1101_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "target": "264_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "label": "extends",
+                    "properties": {
+                        "containmentType": "extends"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902-contains-7_5922057860806017090263446499798911804485581115943994162465636664007429892873",
+                    "source": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902",
+                    "target": "7_5922057860806017090263446499798911804485581115943994162465636664007429892873",
+                    "label": "contains",
+                    "properties": {
+                        "containmentType": "package"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902-contains-1817_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "source": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902",
+                    "target": "1817_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "label": "contains",
+                    "properties": {
+                        "containmentType": "package"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "16_18573710168947395722818196988065667641629061227320998321644155282453191746361-contains-53_18573710168947395722818196988065667641629061227320998321644155282453191746361",
+                    "source": "16_18573710168947395722818196988065667641629061227320998321644155282453191746361",
+                    "target": "53_18573710168947395722818196988065667641629061227320998321644155282453191746361",
+                    "label": "contains",
+                    "properties": {
+                        "containmentType": "package"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902-contains-169_5922057860806017090263446499798911804485581115943994162465636664007429892873",
+                    "source": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902",
+                    "target": "169_5922057860806017090263446499798911804485581115943994162465636664007429892873",
+                    "label": "contains",
+                    "properties": {
+                        "containmentType": "package"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902-contains-169_5922057860806017090263446499798911804485581115943994162465636664007429892873",
+                    "source": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902",
+                    "target": "169_5922057860806017090263446499798911804485581115943994162465636664007429892873",
+                    "label": "contains",
+                    "properties": {
+                        "containmentType": "package"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902-contains-580_108940806429788386109196640337652659507843643088250856282888848706711442564558",
+                    "source": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902",
+                    "target": "580_108940806429788386109196640337652659507843643088250856282888848706711442564558",
+                    "label": "contains",
+                    "properties": {
+                        "containmentType": "package"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902-contains-27_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "source": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902",
+                    "target": "27_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "label": "contains",
+                    "properties": {
+                        "containmentType": "package"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902-contains-119_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "source": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902",
+                    "target": "119_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "label": "contains",
+                    "properties": {
+                        "containmentType": "package"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902-contains-1611_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "source": "14_49881798265996273591468916272598818770191138679126742081133613503375263445902",
+                    "target": "1611_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "label": "contains",
+                    "properties": {
+                        "containmentType": "package"
+                    }
+                }
+            },
+            {
+                "data": {
+                    "id": "1611_81089655204573303596097694707334118075185362493392709917353282299047963500310-implements-119_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "source": "1611_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "target": "119_81089655204573303596097694707334118075185362493392709917353282299047963500310",
+                    "label": "implements",
+                    "properties": {
+                        "containmentType": "implements"
+                    }
+                }
+            }
+        ]
+    }
+}
