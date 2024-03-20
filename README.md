@@ -10,7 +10,7 @@
 3. Change the galaxy tool configuration at `config/tool_conf.xml.sample` by adding:
    ```<section name="Moonshot" id="moonshot">
         <tool file="moonshot/AST-Creation-Tool/zip_to_spif.xml" />
-        <tool file="moonshot/Visualization-Tool/classviz.xml" />
+        <tool file="moonshot/Classviz-Tool/classviz.xml" />
       </section>
    ```
 ## How to use the tool:
