@@ -21,4 +21,4 @@
 3. Upload a JSON file.
 4. Click on "Run Tool".
 5. Copy the display link (http://127.0.0.42:7800/) and open it in new tab.
-4. Delete the job once done to kill the server, or with the cmd `$ pkill -9 -f  'python3 -m http.server -b 127.0.0.42 7800'`
+4. Delete the job once done to kill the server, or with the cmd `$ pkill -9 -f 'python3 -m http.server -b 127.0.0.42 7800'`
