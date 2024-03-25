@@ -1,29 +1,68 @@
 # # Packages
 import sys
 import os
+from jsonschema import validate
+import json
 
-def is_valid_json_file(input_file: str) -> bool:
-    """Check if the input file at file_path is a valid JSON file.
+def is_valid_svif_file(input_file: str) -> bool:
+    """Check if the input file at file_path is a valid SVIF file.
 
     Args:
         file_path (str): Path to the input file.
 
     Returns:
-        bool: True if the file is a valid JSON file, False otherwise.
+        bool: True if the file is a valid SVIF file, False otherwise.
     """
-    # Check if the file is ends with '.json'
-    if not input_file.lower().endswith('.json'):
-        print("The input file is not a JSON file.")
-        print(input_file.lower())
-        return False
-    # Check if the file is readable by Python
+    # Schema for SVIF files
+    schema = {
+        "type": "object", "properties": {
+            # Elements
+            "elements": {"type": "object", "properties": {
+                # Nodes
+                "nodes": {"type": "array", "properties": {
+                    "data": {"type": "object", "properties": {
+                        "id": {"type": "string"},
+                        "labels": {"type": "array"},
+                        "properties": {"type": "object", "properties": {
+                            "simpleName": {"type": "string"},
+                            "metaSrc": {"type": "string"}
+                            # Required object of node properties
+                        }, "required": ["simpleName"]}
+                        # Required objects of node data
+                    }, "required": ["id", "labels", "properties"]}
+                    # Required in node
+                }, "required": ["data"]},
+                # Edges
+                "edges": {"type": "array", "properties": {
+                    "data": {"type": "object", "properties": {
+                        "id": {"type": "string"},
+                        "source": {"type": "string"},
+                        "target": {"type": "string"},
+                        "label": {"type": "string"},
+                        "properties": {"type": "object"}
+                        # Required objects of edge data
+                    }, "required": ["id", "source", "target", "label", "properties"]}
+                    # Required in edge
+                }, "required": ["data"]}
+                # Required in elements
+            }, "required": ["nodes", "edges"]}
+        }
+    }
+
+    # Load input file
+    with open(input_file) as f:
+        is_SVIF = json.load(f)
+
+    # Validate input file
     try:
-        with open(input_file, 'r') as f:
-            data = f.read()
-            return True
+        validate(instance=is_SVIF, schema=schema)
+        return True
+    # except jsonschema.exceptions.ValidationError():
+        # print(e.schema.get("Invalid SVIF file.", e.message))
     except:
-        print("The input file is readable.")
+        print("Invalid SVIF file.")
         return False
+
 
 def rm_file(file_path: str):
     """Remove previous input file at file_path.
@@ -31,6 +70,7 @@ def rm_file(file_path: str):
     Args:
         file_path (str): Path to the file.
     """
+    # Remove file
     os.system(f"rm {file_path}")
 
 def copy_input_file_to_data_folder(input_file: str, output_file: str):
@@ -68,8 +108,8 @@ def main(argv):
     # Assign CLI arguments
     input_file, output_file, tool_dir = argv[1:4] 
 
-    # Check for valid input file
-    if not is_valid_json_file(input_file):
+    # Validate input file
+    if not is_valid_svif_file(input_file):
         sys.exit(1)
     
     # Remove previous input file if it exists - cause Galaxy is laggy
