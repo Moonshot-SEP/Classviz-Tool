@@ -1,10 +1,13 @@
-<tool id="classviz" name="Classviz-Tool" version="1.0.0">
-  <description>Visualize code architecture in JSON format</description>
+<tool id="classviz" name="Visualization-Tool" version="1.0.0">
+  <description>Visualize code architecture.</description>
   <command detect_errors="exit_code">
-    python3 '${__tool_directory__}/pre_classviz.py' '$input' '${__tool_directory__}/data/input.json'; python3 -m http.server -b 127.0.0.42 7800 -d '${__tool_directory__}/'
+   python3 '${__tool_directory__}/classviz.py' '$input' '${__tool_directory__}/data/input.json' '${__tool_directory__}/'
   </command>
   <inputs>
     <param name="input" type="data" format="json" multiple="False" label="JSON file" help="JSON file to be visualized."/>
+    <param name="option" type="select" label="Pick an option">
+      <option value="classviz">ClassViz</option>
+    </param>
   </inputs>
   <outputs>
     <data format="txt" name="link" label="Go to http://127.0.0.42:7800/"/>
