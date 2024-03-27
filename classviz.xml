@@ -1,5 +1,5 @@
-<tool id="classviz" name="Visualization-Tool" version="2.0.0">
-  <description>Visualize code architecture.</description>
+<tool id="classviz" name="ClassViz-Tool" version="2.1.0">
+  <description>Visualize knowledge-based system representations.</description>
   <command detect_errors="exit_code">
    python3 '${__tool_directory__}/classviz.py' '$input' '${__tool_directory__}/data/input.json' '${__tool_directory__}/'
   </command>
@@ -16,6 +16,12 @@
     <data format="txt" name="output" label="Go to http://127.0.0.42:7800/"/>
   </outputs>
   <help>
-    This tool takes a JSON file as input and visualize the code architecture. Delete the job once done to kill the server.
+**What it does**
+    This tool takes a JSON file, in Software Vizualization Interchange Format (SVIF) file format, as input and visualize a knowledge-based system representation of the code.
+
+-----
+**Remarks**
+    - The job fails if the input file is not a JSON file, or it is not in SVIF file format.
+    - Delete the job once done to kill the server that hosts the tool.
   </help>
 </tool>
