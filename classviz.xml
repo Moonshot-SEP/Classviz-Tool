@@ -9,10 +9,11 @@
     </param>
   </inputs>
   <stdio>
-    <exit_code range="6:" level="fatal" description="Invalid SVIF file" />
+    <exit_code range="6:6" level="fatal" description="Not a JSON file" />
+    <exit_code range="7:7" level="fatal" description="Invalid SVIF format file" />
   </stdio>
   <outputs>
-    <data format="txt" name="link" label="Go to http://127.0.0.42:7800/"/>
+    <data format="txt" name="output" label="Go to http://127.0.0.42:7800/"/>
   </outputs>
   <help>
     This tool takes a JSON file as input and visualize the code architecture. Delete the job once done to kill the server.

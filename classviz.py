@@ -4,7 +4,7 @@ import os
 from jsonschema import validate
 import json
 
-def is_valid_svif_file(input_file: str) -> bool:
+def is_valid_svif_file(input_file: str):
     """Check if the input file at file_path is a valid SVIF file.
 
     Args:
@@ -26,9 +26,10 @@ def is_valid_svif_file(input_file: str) -> bool:
                         "properties": {"type": "object", "properties": {
                             "simpleName": {"type": "string"},
                             "metaSrc": {"type": "string"}
-                        }}
-                        # Required object of node data
-                    }, "required": ["id"]}
+                            # Required object of node properties
+                        }, "required": ["simpleName"]}
+                        # Required objects of node data
+                    }, "required": ["id", "labels", "properties"]}
                     # Required in node
                 }, "required": ["data"]},
                 # Edges
@@ -40,27 +41,31 @@ def is_valid_svif_file(input_file: str) -> bool:
                         "label": {"type": "string"},
                         "properties": {"type": "object"}
                         # Required objects of edge data
-                    }, "required": ["id", "source", "target"]}
+                    }, "required": ["id", "source", "target", "label", "properties"]}
                     # Required in edge
                 }, "required": ["data"]}
-                # Required in elements. ClassViz still accepts file without edges
-            }, "required": ["nodes"]}
+                # Required in elements
+            }, "required": ["nodes", "edges"]}
         }
     }
 
-    # Load input file
-    with open(input_file) as f:
-        is_SVIF = json.load(f)
+    # Validate input file type
+    try:
+        # Load input file
+        with open(input_file) as f:
+            is_SVIF = json.load(f)
+    except:
+        print("Not a JSON file.")
+        sys.exit(6)
 
-    # Validate input file
+    # Validate input file SVIF format
     try:
         validate(instance=is_SVIF, schema=schema)
-        return True
     # except jsonschema.exceptions.ValidationError():
         # print(e.schema.get("Invalid SVIF file.", e.message))
     except:
-        print("Invalid SVIF file.")
-        return False
+        print("Invalid SVIF format.")
+        sys.exit(7)
 
 
 def rm_file(file_path: str):
@@ -108,8 +113,7 @@ def main(argv):
     input_file, output_file, tool_dir = argv[1:4] 
 
     # Validate input file
-    if not is_valid_svif_file(input_file):
-        sys.exit(1)
+    is_valid_svif_file(input_file)
     
     # Remove previous input file if it exists - cause Galaxy is laggy
     rm_file(output_file)
