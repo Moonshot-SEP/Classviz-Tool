@@ -26,10 +26,9 @@ def is_valid_svif_file(input_file: str) -> bool:
                         "properties": {"type": "object", "properties": {
                             "simpleName": {"type": "string"},
                             "metaSrc": {"type": "string"}
-                            # Required object of node properties
-                        }, "required": ["simpleName"]}
-                        # Required objects of node data
-                    }, "required": ["id", "labels", "properties"]}
+                        }}
+                        # Required object of node data
+                    }, "required": ["id"]}
                     # Required in node
                 }, "required": ["data"]},
                 # Edges
@@ -41,11 +40,11 @@ def is_valid_svif_file(input_file: str) -> bool:
                         "label": {"type": "string"},
                         "properties": {"type": "object"}
                         # Required objects of edge data
-                    }, "required": ["id", "source", "target", "label", "properties"]}
+                    }, "required": ["id", "source", "target"]}
                     # Required in edge
                 }, "required": ["data"]}
-                # Required in elements
-            }, "required": ["nodes", "edges"]}
+                # Required in elements. ClassViz still accepts file without edges
+            }, "required": ["nodes"]}
         }
     }
 
